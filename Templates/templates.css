@@ -1,0 +1,168 @@
+/* Black Footer */
+footer {
+   
+    color: white; /* Weiße Textfarbe */
+    text-align: center; /* Zentriert den Text */
+    padding: 15px; /* Etwas Platz um den Inhalt */
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* Maximale Breite des Inhalts */
+    margin: 0 auto; /* Zentriert den Inhalt horizontal */
+  }
+  
+  .footer-content a {
+    display: block; /* Jeder Link wird als Block dargestellt, um auf eigener Zeile zu sein */
+    margin-bottom: 10px; /* Abstand zwischen den Links */
+    color: white; /* Linkfarbe */
+    text-decoration: none; /* Keine Unterstreichung der Links */
+  }
+  
+  .footer-content a:hover {
+    text-decoration: underline; /* Fügt eine Unterstreichung beim Hover hinzu */
+  }
+  
+  .social-icons a {
+    display: inline-block; /* Icons nebeneinander anzeigen */
+    margin-right: 10px; /* Abstand zwischen Icons */
+  }
+  
+  .footer-nav {
+    margin-top: 20px; /* Abstand zwischen Social Media Links und Navigationslinks */
+  }
+  
+  .footer-nav a {
+    display: inline-block; /* Navigationslinks nebeneinander anzeigen */
+    margin: 0 ; /* Abstand zwischen den Navigationslinks */
+  }
+  
+  .icons {
+    height: 35px;
+    width: 35px;
+    transition: transform 0.3s ease; /* Weicher Übergang für die Transformation */
+  }
+  
+  .icons:hover {
+    transform: scale(0.857); /* Verkleinert das Icon auf etwa 85.7% seiner Größe */
+  }
+  
+  .main_h1{
+    font-size: 100px;
+    z-index: 100;
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Alex Brush';
+
+  }
+
+.copyright {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    margin-top: 1rem;
+}
+
+@media(max-width: 768px) {
+  .main_h1{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+/* White Footer */
+footer {
+   
+    color: black; /* Weiße Textfarbe */
+    text-align: center; /* Zentriert den Text */
+    padding: 15px; /* Etwas Platz um den Inhalt */
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* Maximale Breite des Inhalts */
+    margin: 0 auto; /* Zentriert den Inhalt horizontal */
+  }
+  
+  .footer-content a {
+    display: block; /* Jeder Link wird als Block dargestellt, um auf eigener Zeile zu sein */
+    margin-bottom: 10px; /* Abstand zwischen den Links */
+    color: black; /* Linkfarbe */
+    text-decoration: none; /* Keine Unterstreichung der Links */
+  }
+  
+  .footer-content a:hover {
+    text-decoration: underline; /* Fügt eine Unterstreichung beim Hover hinzu */
+  }
+  
+  .social-icons a {
+    display: inline-block; /* Icons nebeneinander anzeigen */
+    margin-right: 10px; /* Abstand zwischen Icons */
+  }
+  
+  .footer-nav {
+    margin-top: 20px; /* Abstand zwischen Social Media Links und Navigationslinks */
+  }
+  
+  .footer-nav a {
+    display: inline-block; /* Navigationslinks nebeneinander anzeigen */
+    margin: 0 ; /* Abstand zwischen den Navigationslinks */
+  }
+  
+  .icons {
+    height: 35px;
+    width: 35px;
+    transition: transform 0.3s ease; /* Weicher Übergang für die Transformation */
+  }
+  
+  .icons:hover {
+    transform: scale(0.857); /* Verkleinert das Icon auf etwa 85.7% seiner Größe */
+  }
+  
+.copyright {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    margin-top: 1rem;
+}
+
+/* Navbar */
+body {
+  
+    padding-top: 1rem;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    background-color: #fff; /* Weißer Hintergrund */
+}
+
+.navbar {
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.nav-list li {
+    margin: 0 10px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-list a:hover {
+    background-color: #ddd;
+    border-radius: 10px;
+}

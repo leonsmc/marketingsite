@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nalumi Studios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="icons/Circle_Logo.png">
+</head>
+<body>
+  <!-- <img class="logo" src="icons/LOGO.png" alt=""> -->
+  <img class="navbar-button" src="icons/navbar-button.png" alt="" id="navbarToggle">
+  <img id="rotating-image" src="icons/Circle_Logo.png" alt="Rotierendes Bild">
+    <nav class="navbar">
+      <ul class="nav-list">
+          
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="webdesign.html">Webdesign</a></li>
+          <li><a href="edit_preview.html">Bildbearbeitung</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+          <li><a href="studio.html">Fotostudio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </nav>
+
+
+                                                    <!-- CONTENT -->
+
+
+
+  <div class="grid-container">
+    <div class="background-image">
+      <img src="BackGround/StockBackground_Work.jpeg" alt="Beschreibendes Bild">
+    </div>
+    <div class="text-content">
+      <h1>Kreativität am Werk</h1>
+      <p>Design, das spricht: Maßgeschneiderte Webauftritte für jedes Business. Personalisiert und abgestimmt auf Ihre Wünsche</p>
+      <p>Treten Sie direkt in Kontakt mit uns und lassen Sie uns gemeinsam Ihre Vision mit kreativer Präzision zum Leben erwecken</p>
+    </div>
+  </div>
+
+
+  
+
+  <div class="grid-container">
+    
+    <div class="text-content">
+      <h1>Produkt Fotografie</h1>
+      <p>Produktfotografie, die verkauft: Setzen Sie Ihre Artikel ins rechte Licht und steigern Sie Ihre Verkaufszahlen mit hochwertigen Bildern</p>
+      <p>Lassen Sie Bilder sprechen und verwandeln Sie Interessenten in Käufer durch visuelle Perfektion</p>
+    </div>
+    <div class="background-image">
+      <img src="BackGround/StockBackground_Produktfotografie.jpeg" alt="Beschreibendes Bild">
+    </div>
+  </div>
+
+
+
+
+                                                    <!-- CONTENT -->
+
+
+
+    <footer>
+        <div class="footer-content">
+          <a href="mailto:help@deinedomain.com">Brauchst du Hilfe? Email uns</a>
+          <div class="social-icons">
+            <!-- Füge hier deine Social Media Links ein -->
+            <a href="https://www.instagram.com/leon.smc_" target="_blank"><img class="icons" src="icons/insta_icon.png" alt=""></a>
+            <a href="https://github.com/leonsmc" target="_blank"><img class="icons" src="icons/github_icon.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/leon-salzmann-4952592a2/" target="_blank"><img class="icons" src="icons/linkedin_icon.png" alt=""></a>
+            <!-- Weitere Icons -->
+          </div>
+          <nav class="footer-nav">
+            <!-- Füge hier die Links zu deinen Seiten ein -->
+            <a href="/privacy">Datenschutz |</a>
+            <a href="/terms">Nutzungsbedingungen</a>
+          </nav>
+          <p class="copyright">Copyright © 2024 Lumina Studios</p>
+        </div>
+      </footer>
+      
+
+      <script>
+        document.addEventListener('scroll', function() {
+    var rotationDegree = window.scrollY * 1; // Teilt den Scroll-Wert, um die Rotation zu verlangsamen
+    document.getElementById('rotating-image').style.transform = 'rotate(' + rotationDegree + 'deg)';
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var rotatingImage = document.getElementById('rotating-image');
+  var navbar = document.querySelector('.navbar');
+
+  rotatingImage.addEventListener('click', function() {
+    // Prüfe, ob die Aktion nur auf mobilen Geräten ausgeführt werden soll
+    if (window.innerWidth <= 768) {
+      // Prüfe den aktuellen Display-Status und wechsle ihn
+      if (navbar.style.display === 'block') {
+        navbar.style.display = 'none';
+      } else {
+        navbar.style.display = 'block';
+      }
+    }
+  });
+});
+
+
+    </script>
+
+</body>
+
+</html>

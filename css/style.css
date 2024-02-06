@@ -1,0 +1,250 @@
+/* ########### NAVBAR ###########*/
+
+body {
+  
+    padding-top: 1rem;
+    margin: 0;
+    font-family: 'Amplitude Wide', sans-serif;
+    font-size: 1.4rem;
+    background-color: #fff; /* Weißer Hintergrund */
+}
+
+.navbar {
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.nav-list li {
+    margin: 0 10px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-list a:hover {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+
+/* ########### FOOTER ###########*/
+  
+footer {
+   
+    color: black; /* Weiße Textfarbe */
+    text-align: center; /* Zentriert den Text */
+    padding: 15px; /* Etwas Platz um den Inhalt */
+    font-family: 'Amplitude Wide', sans-serif;
+    font-size: 12px;
+    top: 6rem;
+    position: relative;
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* Maximale Breite des Inhalts */
+    margin: 0 auto; /* Zentriert den Inhalt horizontal */
+  }
+  
+  .footer-content a {
+    display: block; /* Jeder Link wird als Block dargestellt, um auf eigener Zeile zu sein */
+    margin-bottom: 10px; /* Abstand zwischen den Links */
+    color: black; /* Linkfarbe */
+    text-decoration: none; /* Keine Unterstreichung der Links */
+  }
+  
+  .footer-content a:hover {
+    text-decoration: underline; /* Fügt eine Unterstreichung beim Hover hinzu */
+  }
+  
+  .social-icons a {
+    display: inline-block; /* Icons nebeneinander anzeigen */
+    margin-right: 10px; /* Abstand zwischen Icons */
+  }
+  
+  .footer-nav {
+    margin-top: 20px; /* Abstand zwischen Social Media Links und Navigationslinks */
+  }
+  
+  .footer-nav a {
+    display: inline-block; /* Navigationslinks nebeneinander anzeigen */
+    margin: 0 ; /* Abstand zwischen den Navigationslinks */
+  }
+  
+  .icons {
+    height: 35px;
+    width: 35px;
+    transition: transform 0.3s ease; /* Weicher Übergang für die Transformation */
+  }
+  
+  .icons:hover {
+    transform: scale(0.857); /* Verkleinert das Icon auf etwa 85.7% seiner Größe */
+  }
+  
+.copyright {
+  font-family: 'Amplitude Wide', sans-serif;
+    font-size: 10px;
+    margin-top: 1rem;
+}
+
+.logo{
+  height: 6rem;
+  position: absolute;
+  margin-left: 1rem;
+  margin-top: 0;
+}
+
+.navbar-button{
+  display: none;
+
+}
+
+
+
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Zwei Spalten mit gleicher Breite */
+  gap: 1rem; /* Abstand zwischen Spalten */
+  align-items: start; /* Ausrichtung der Inhalte */
+  margin-top: 5rem; /* Abstand oben */
+  margin-left: 2rem; /* Abstand links */
+  margin-right: 2rem;
+  margin-bottom: 6rem; /* Abstand rechts */
+  /* Alternativ: margin: 3rem 1rem 0 1rem; für oben, rechts, unten (0), links */
+}
+
+.background-image {
+  position: relative;
+  width: 100%; /* Passt die Breite an den Container an */
+  height: auto; /* Höhe automatisch basierend auf dem Bild */
+}
+
+.background-image img {
+  max-width: 100%;
+  width: 100%; /* Stellt sicher, dass das Bild den Container vollständig ausfüllt */
+  height: auto; /* Behält das Seitenverhältnis des Bildes bei */
+}
+
+.text-content {
+  padding: 0 1rem; /* Fügt Padding hininter dem Text hinzu für bessere Lesbarkeit */
+}
+
+
+
+
+
+
+
+#rotating-image {
+  transition: transform 0.5s; /* Glatte Animation */
+  /* Optional: Bildgröße anpassen */
+  width:70px; /* Oder eine andere Größe */
+  display: block;
+  top: 1rem;
+  left: 1rem;
+  position: fixed;
+  z-index: 999;
+}
+
+@media (max-width: 760px) {
+  .logo{
+    height: 4.3rem;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #rotating-image{
+    width: 30px;
+  }
+
+
+
+
+
+
+
+
+  .navbar {
+    background-color: #fff ;
+    border-radius: 5px;
+    text-align: center;
+    background-color:whitesmoke;
+    display: none;
+    position: fixed;
+    width: 100%;
+    z-index: 998;
+    
+}
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Ändere die Ausrichtung zu einer Spalte */
+    justify-content: center;
+    align-items: center; /* Zentriert die Listenelemente horizontal */
+    border-radius: 5px;
+}
+.nav-list li {
+    margin: 10px 0; /* Ändere die Margin für vertikale Abstände */
+}
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    display: block;
+}
+.nav-list a:hover {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+
+.grid-container {
+  grid-template-columns: 1fr; /* Eine Spalte für Mobile */
+  margin-top: 5rem; /* Abstand oben */
+  margin-left: 0rem; /* Abstand links */
+  margin-right: 0rem;
+  margin-bottom: 1rem;
+}
+
+.background-image,
+.text-content {
+  max-width: 100%;
+  /* Auf mobilen Geräten soll jedes Element die volle Breite einnehmen */
+ 
+  order: 1; /* Standardmäßig erscheinen Bilder unter dem Text */
+}
+
+.grid-container:first-child .background-image {
+  /* Nur im ersten Grid-Container erscheint das Bild zuerst */
+  order: 1;
+}
+
+.grid-container:first-child .text-content {
+  /* Im ersten Grid-Container erscheint der Text nach dem Bild */
+  order: 2;
+}
+
+
+
+}
